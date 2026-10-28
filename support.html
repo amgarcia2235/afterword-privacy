@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterword Support</title>
+<meta name="description" content="Help and contact information for the Afterword ebook, comic and audiobook reader for iPhone and iPad.">
+<style>
+  :root {
+    --paper: #F6F0E4;
+    --card: #FCF9F2;
+    --ink: #1E2A44;
+    --text: #2B2A28;
+    --muted: #5C5750;
+    --ribbon: #9C2621;
+    --rule: #E2D8C6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14120F;
+      --card: #1F1C18;
+      --ink: #ECE4D4;
+      --text: #E3DCCD;
+      --muted: #B4AC9C;
+      --ribbon: #F0857F;
+      --rule: #2E2A24;
+    }
+  }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--paper);
+    color: var(--text);
+    font: 17px/1.6 ui-serif, "New York", Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { padding: 48px 0 16px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+  .ribbon {
+    width: 16px; height: 34px; background: var(--ribbon);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+    margin-bottom: 16px;
+  }
+  h1 { color: var(--ink); font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { color: var(--ink); font-size: 1.25rem; margin: 32px 0 8px; }
+  h3 { color: var(--ink); font-size: 1.05rem; margin: 20px 0 4px; }
+  .lede { color: var(--muted); font: 15px/1.4 -apple-system, system-ui, sans-serif; margin: 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  strong { color: var(--ink); }
+  a { color: var(--ribbon); }
+  .note {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 12px 16px; margin: 16px 0;
+  }
+  nav a { margin-right: 16px; font: 15px/1.4 -apple-system, system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="ribbon" aria-hidden="true"></div>
+    <h1>Afterword Support</h1>
+    <p class="lede">An ebook, comic and audiobook reader for the books you own, on iPhone and iPad.</p>
+  </header>
+
+  <nav aria-label="Pages">
+    <a href="#contact">Contact</a>
+    <a href="#add-books">Adding books</a>
+    <a href="#faq">Questions</a>
+    <a href="./">Privacy policy</a>
+  </nav>
+
+  <h2 id="contact">Contact</h2>
+  <div class="note">
+    <p style="margin:0">Email <a href="mailto:afterwordr@gmail.com">afterwordr@gmail.com</a>.
+    Replies usually come within two business days. For a bug, please include
+    your iPhone or iPad model, the iOS version, the app version (shown at the
+    bottom of the Settings tab) and, if you can, the file that caused the
+    trouble.</p>
+  </div>
+
+  <h2 id="add-books">Adding books</h2>
+  <ul>
+    <li><strong>From Files or iCloud Drive:</strong> tap + in the Library and
+    pick one or more files. You can also open a file from Mail, Safari or any
+    app with "Open in" and choose Afterword.</li>
+    <li><strong>Send to Afterword folder:</strong> drop files into
+    Files &gt; On My iPhone (or iPad) &gt; Afterword &gt; Send to Afterword.
+    They import the next time the app is open.</li>
+    <li><strong>From a book server:</strong> Browse &gt; Add Catalog and enter
+    the address of your OPDS catalog (Calibre-Web, Kavita, Komga or any OPDS
+    feed). Project Gutenberg and Standard Ebooks are built in.</li>
+    <li><strong>Audiobooks:</strong> add M4B, M4A, MP3, AAC or FLAC files the
+    same way, or sign in to an Audiobookshelf server under Browse.</li>
+  </ul>
+  <p>Supported formats: EPUB, PDF, CBZ, CBR, CB7 and CBT comics, and DRM-free
+  MOBI, AZW, AZW3, PRC, FB2, TXT, Markdown and HTML, which are converted to
+  EPUB when you add them.</p>
+
+  <h2 id="faq">Questions</h2>
+
+  <h3>Can Afterword open my Kindle or Audible purchases?</h3>
+  <p>No. Afterword reads DRM-free files only. Books and audiobooks protected
+  by DRM (most Kindle store purchases, all of Audible) cannot be opened, and
+  Afterword does not remove DRM. Kindle highlights and notes can still be
+  imported from a My Clippings file or a notebook export.</p>
+
+  <h3>How do I import my highlights?</h3>
+  <p>Settings &gt; Import Highlights and Lists. Afterword reads Kindle
+  "My Clippings.txt" (from the Kindle's documents folder) and notebook HTML
+  exports from the Kindle app, Apple Books annotation databases, and Goodreads
+  or StoryGraph CSV exports. Highlights for books already in your library are
+  placed in the text; the rest wait under "Not in Your Library" in the
+  Notebook until you add the book.</p>
+
+  <h3>Why don't I see word hints or Smart Reading?</h3>
+  <p>Those features use Apple's on-device model, so they need iOS 26 or later
+  on a device that supports Apple Intelligence, with Apple Intelligence turned
+  on in Settings. On other devices, hints appear only for words saved in your
+  Vocabulary, and Smart Reading is hidden.</p>
+
+  <h3>Audiobook alignment takes a long time</h3>
+  <p>Lining an audiobook up with its ebook uses on-device speech recognition,
+  so it needs the book's language to be supported for on-device recognition
+  and the app to stay open. A long audiobook can take a while; if you leave,
+  it picks up where it stopped.</p>
+
+  <h3>What syncs over iCloud?</h3>
+  <p>Library details, reading positions, highlights and notes, reading
+  sessions and settings, plus your book files if you turn on "Sync Book
+  Files". Per-book text settings, drawings on PDFs and audiobook alignments
+  stay on the device where you made them. Sync needs the same Apple Account
+  on each device; you can turn it off in Settings &gt; iCloud.</p>
+
+  <h3>Does Afterword send my books anywhere?</h3>
+  <p>No. There are no accounts, ads or analytics, and the developer runs no
+  servers. Data leaves your device only for services you set up yourself
+  (your own book server, KOReader sync, Hardcover, Readwise) or if you choose
+  to turn on a cloud AI provider, which is off by default. See the
+  <a href="./">privacy policy</a>.</p>
+
+  <h3>A book will not open or looks wrong</h3>
+  <p>Try the file in another reader to confirm it is not damaged, then email
+  it to the address above with a note about what you saw. Files that are not
+  DRM-free, or that are protected archives, cannot be opened.</p>
+
+  <h3>How do I delete my data?</h3>
+  <p>Deleting the app removes everything stored on the device. What is in
+  iCloud belongs to your Apple Account: turn off sync in Afterword's Settings,
+  then remove Afterword's data under iOS Settings &gt; Apple Account &gt;
+  iCloud &gt; Manage Account Storage.</p>
+
+  <p class="lede" style="margin-top:40px">Afterword is made by Abel Garcia in New Jersey, USA.</p>
+</main>
+</body>
+</html>
