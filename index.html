@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterword Privacy Policy</title>
+<meta name="description" content="How the Afterword reading app handles your books, notes and reading data.">
+<style>
+  :root {
+    --paper: #F6F0E4;
+    --card: #FCF9F2;
+    --ink: #1E2A44;
+    --text: #2B2A28;
+    --muted: #5C5750;
+    --ribbon: #9C2621;
+    --rule: #E2D8C6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14120F;
+      --card: #1F1C18;
+      --ink: #ECE4D4;
+      --text: #E3DCCD;
+      --muted: #B4AC9C;
+      --ribbon: #F0857F;
+      --rule: #2E2A24;
+    }
+  }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--paper);
+    color: var(--text);
+    font: 17px/1.6 ui-serif, "New York", Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { padding: 48px 0 16px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+  .ribbon {
+    width: 16px; height: 34px; background: var(--ribbon);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+    margin-bottom: 16px;
+  }
+  h1 { color: var(--ink); font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { color: var(--ink); font-size: 1.25rem; margin: 32px 0 8px; }
+  .updated { color: var(--muted); font: 15px/1.4 -apple-system, system-ui, sans-serif; margin: 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  strong { color: var(--ink); }
+  a { color: var(--ribbon); }
+  .note {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 12px 16px; margin: 16px 0;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="ribbon" aria-hidden="true"></div>
+    <h1>Afterword Privacy Policy</h1>
+    <p class="updated">Last updated: October 28, 2026</p>
+  </header>
+
+  <p>Afterword is an ebook, comic and audiobook reader for the books you own.
+  It has no accounts of its own, no ads, no analytics and no tracking. The
+  developer does not run any servers and does not receive your books, your
+  reading activity or any personal data.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Your books, covers, reading positions, highlights, notes, bookmarks,
+  drawings on PDFs, vocabulary, reading statistics and settings are stored on
+  your device, inside Afterword's own storage.</p>
+  <p>These features run entirely on your device and send nothing anywhere:</p>
+  <ul>
+    <li><strong>Smart Reading</strong> with Apple's on-device model (story so
+    far, Ask this book, X-Ray, word help).</li>
+    <li><strong>Word Wise</strong> glosses, which use a word list built into
+    the app and Apple's on-device model.</li>
+    <li><strong>Audiobook alignment</strong>, which listens to an audiobook you
+    added with Apple's on-device speech recognition to line it up with the
+    matching ebook. Afterword asks for permission first, and the audio never
+    leaves your device.</li>
+    <li><strong>Imports</strong> of highlights and reading lists from files you
+    choose: Kindle clippings and notebook exports, Apple Books annotation
+    databases, and Goodreads or StoryGraph exports.</li>
+    <li><strong>Exports</strong> of your highlights as Markdown, CSV or JSON,
+    which are written only where you choose to save or share them.</li>
+  </ul>
+
+  <h2>iCloud</h2>
+  <p>If you are signed in to iCloud and leave sync on, Afterword stores your
+  library details, reading positions, highlights, reading sessions and
+  settings in your private iCloud database, and your book files too if you
+  turn on "Sync Book Files". This data is held by Apple under Apple's privacy
+  policy and is visible only to your Apple Account. You can turn sync off in
+  Settings at any time.</p>
+
+  <h2>Services you choose to connect</h2>
+  <p>Afterword sends data to another service only when you set that service
+  up. Each one receives only what it needs:</p>
+  <ul>
+    <li><strong>Book servers and catalogs you add</strong> (OPDS catalogs such
+    as Calibre-Web, Kavita or Komga, and Audiobookshelf): your sign-in details
+    for that server, requests for the books you browse or open, and, for
+    Audiobookshelf, your listening progress.</li>
+    <li><strong>KOReader progress sync (KOSync)</strong>: your KOSync username,
+    a password digest, a fingerprint of each book file and your position in
+    it.</li>
+    <li><strong>Hardcover</strong>: your Hardcover token, the titles and
+    authors you look up, and your reading status and progress for books you
+    link.</li>
+    <li><strong>Readwise</strong>: your Readwise token and the highlights and
+    notes you export.</li>
+    <li><strong>Open Library</strong>: the title and author of a book when you
+    search for its cover or details.</li>
+    <li><strong>Cloud AI</strong> (optional, off by default): Apple Private
+    Cloud Compute, or Anthropic's Claude with your own API key. Afterword asks
+    for your permission before turning either on. After that, when the
+    on-device model cannot handle a request, your question and the passages of
+    the book needed to answer it are sent to that provider. Apple Private Cloud
+    Compute does not keep them. Anthropic handles them under its own policy and
+    bills your account.</li>
+  </ul>
+  <p>Tokens and passwords you enter are stored in the iOS Keychain on your
+  device. Those services handle your data under their own privacy
+  policies.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Speech recognition</strong>: only for audiobook alignment, on
+    your device.</li>
+    <li><strong>Notifications</strong>: only for the daily highlight review, if
+    you turn it on.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Afterword is not directed at children and collects no data from
+  anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted at this address
+  with a new "Last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy or Afterword: write to
+  <a href="mailto:afterwordr@gmail.com">afterwordr@gmail.com</a>.</p>
+</main>
+</body>
+</html>
