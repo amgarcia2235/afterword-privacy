@@ -17,13 +17,13 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #14120F;
-      --card: #1F1C18;
-      --ink: #ECE4D4;
-      --text: #E3DCCD;
-      --muted: #B4AC9C;
-      --ribbon: #F0857F;
-      --rule: #2E2A24;
+      --paper: #131B30;
+      --card: #1C2641;
+      --ink: #F1EADB;
+      --text: #E9E2D3;
+      --muted: #B9B3A6;
+      --ribbon: #F2918B;
+      --rule: #2B3655;
     }
   }
   html { background: var(--paper); }
@@ -60,10 +60,11 @@
   <header>
     <div class="ribbon" aria-hidden="true"></div>
     <h1>Afterword Privacy Policy</h1>
-    <p class="updated">Last updated: November 3, 2026</p>
+    <p class="updated">Last updated: November 10, 2026</p>
   </header>
 
-  <p>Afterword is an ebook, comic and audiobook reader for the books you own.
+  <p>Afterword is an ebook, comic and audiobook reader. It comes with free
+  public-domain classics and reads the books you own.
   It has no accounts of its own, no ads, no analytics and no tracking. The
   developer does not run any servers and does not receive your books, your
   reading activity or any personal data.</p>
@@ -112,6 +113,30 @@
   before you start or join, and sharing stops when you leave. SharePlay is
   provided by Apple under Apple's privacy policy.</p>
 
+  <h2>Book clubs</h2>
+  <p>When you start or join a book club, Afterword uses Apple's iCloud sharing
+  (CloudKit) to share with the club's members: the club's name and length, the
+  book's title, author and an identifier for it, the name you give yourself
+  for clubs, your progress through the book as a percentage when you check in,
+  and the notes and check-ins you post. The club lives in the host's iCloud and
+  is shared only with people who open the club's link. Leaving a club removes
+  you from it; when the host ends it, it is removed for everyone. iCloud is
+  provided by Apple under Apple's privacy policy.</p>
+
+  <h2>Free libraries</h2>
+  <p>When you browse or search the free libraries in Browse (Project Gutenberg,
+  Standard Ebooks, Wikisource and textos.info), Afterword asks those sites for
+  their catalog pages, your search words and the books you download, as any
+  web browser would. You don't need an account, and nothing else about you is
+  sent.</p>
+
+  <h2>Afterword Plus</h2>
+  <p>Afterword Plus is bought through Apple's App Store. Apple handles the
+  payment; Afterword checks on your device, with Apple, whether you have Plus
+  and which version you first installed (people who installed before 2.0 keep
+  Plus). The developer does not receive your name, payment details or
+  purchase history.</p>
+
   <h2>Services you choose to connect</h2>
   <p>Afterword sends data to another service only when you set that service
   up. Each one receives only what it needs:</p>
@@ -130,6 +155,11 @@
     notes you export.</li>
     <li><strong>Open Library</strong>: the title and author of a book when you
     search for its cover or details.</li>
+    <li><strong>AI Narration with ElevenLabs</strong> (optional, off by
+    default): your ElevenLabs API key, and the text of the sentences you have
+    read aloud, so ElevenLabs can make the audio. The audio is kept on your
+    device. ElevenLabs handles the text under its own policy and bills your
+    account.</li>
     <li><strong>Cloud AI</strong> (optional, off by default): Apple Private
     Cloud Compute, or Anthropic's Claude with your own API key. Afterword asks
     for your permission before turning either on. After that, when the
@@ -146,8 +176,12 @@
   <ul>
     <li><strong>Speech recognition</strong>: only for audiobook alignment, on
     your device.</li>
-    <li><strong>Notifications</strong>: only for the daily highlight review, if
-    you turn it on.</li>
+    <li><strong>Notifications</strong>: only for the daily highlight review if
+    you turn it on, a note to future you on the day you chose, and a reminder
+    two days before a free trial of Afterword Plus ends if you leave that
+    reminder on.</li>
+    <li><strong>Personal Voice</strong>: only if you choose to have books read
+    aloud in your own Personal Voice; it stays on your device.</li>
   </ul>
 
   <h2>Children</h2>
