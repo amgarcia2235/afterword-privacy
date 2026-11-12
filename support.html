@@ -3,27 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Afterword Support</title>
-<meta name="description" content="Help and contact information for the Afterword ebook, comic and audiobook reader for iPhone and iPad.">
+<title>Last Page Support</title>
+<meta name="description" content="Help and contact information for the Last Page ebook, comic and audiobook reader for iPhone and iPad.">
 <style>
   :root {
-    --paper: #F6F0E4;
-    --card: #FCF9F2;
-    --ink: #1E2A44;
-    --text: #2B2A28;
-    --muted: #5C5750;
-    --ribbon: #9C2621;
-    --rule: #E2D8C6;
+    --paper: #FFFFFF;
+    --card: #F4F4F5;
+    --ink: #0A0A0B;
+    --text: #1C1C1F;
+    --muted: #5E5E66;
+    --link: #0A0A0B;
+    --marker: #FFE600;
+    --rule: #DCDCE0;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #131B30;
-      --card: #1C2641;
-      --ink: #F1EADB;
-      --text: #E9E2D3;
-      --muted: #B9B3A6;
-      --ribbon: #F2918B;
-      --rule: #2B3655;
+      --paper: #0A0A0B;
+      --card: #18181A;
+      --ink: #F4F4F0;
+      --text: #E6E6E2;
+      --muted: #A8A8AE;
+      --link: #FFE600;
+      --rule: #2E2E32;
     }
   }
   html { background: var(--paper); }
@@ -32,24 +33,28 @@
     padding: 0 16px 64px;
     background: var(--paper);
     color: var(--text);
-    font: 17px/1.6 ui-serif, "New York", Georgia, "Times New Roman", serif;
+    font: 17px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
     -webkit-text-size-adjust: 100%;
   }
   main { max-width: 680px; margin: 0 auto; }
   header { padding: 48px 0 16px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
   .ribbon {
-    width: 16px; height: 34px; background: var(--ribbon);
+    width: 18px; height: 38px; background: #0A0A0B; position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
     margin-bottom: 16px;
   }
-  h1 { color: var(--ink); font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
-  h2 { color: var(--ink); font-size: 1.25rem; margin: 32px 0 8px; }
+  .ribbon::after {
+    content: ""; position: absolute; inset: 1.5px; background: var(--marker);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+  }
+  h1 { color: var(--ink); font-size: 2.4rem; line-height: 1.05; margin: 0 0 8px; font-weight: 800; font-stretch: 75%; letter-spacing: -0.01em; }
+  h2 { color: var(--ink); font-size: 1.35rem; margin: 32px 0 8px; font-weight: 800; font-stretch: 75%; }
   h3 { color: var(--ink); font-size: 1.05rem; margin: 20px 0 4px; }
   .lede { color: var(--muted); font: 15px/1.4 -apple-system, system-ui, sans-serif; margin: 0; }
   ul { padding-left: 1.2em; }
   li { margin: 6px 0; }
   strong { color: var(--ink); }
-  a { color: var(--ribbon); }
+  a { color: var(--link); text-underline-offset: 3px; }
   .note {
     background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
     padding: 12px 16px; margin: 16px 0;
@@ -61,7 +66,7 @@
 <main>
   <header>
     <div class="ribbon" aria-hidden="true"></div>
-    <h1>Afterword Support</h1>
+    <h1>Last Page Support</h1>
     <p class="lede">An ebook, comic and audiobook reader for the books you own, on iPhone and iPad.</p>
   </header>
 
@@ -85,9 +90,9 @@
   <ul>
     <li><strong>From Files or iCloud Drive:</strong> tap + in the Library and
     pick one or more files. You can also open a file from Mail, Safari or any
-    app with "Open in" and choose Afterword.</li>
-    <li><strong>Send to Afterword folder:</strong> drop files into
-    Files &gt; On My iPhone (or iPad) &gt; Afterword &gt; Send to Afterword.
+    app with "Open in" and choose Last Page.</li>
+    <li><strong>Send to Last Page folder:</strong> drop files into
+    Files &gt; On My iPhone (or iPad) &gt; Last Page &gt; Send to Last Page.
     They import the next time the app is open.</li>
     <li><strong>From a book server:</strong> Browse &gt; Add Catalog and enter
     the address of your OPDS catalog (Calibre-Web, Kavita, Komga or any OPDS
@@ -101,14 +106,14 @@
 
   <h2 id="faq">Questions</h2>
 
-  <h3>Can Afterword open my Kindle or Audible purchases?</h3>
-  <p>No. Afterword reads DRM-free files only. Books and audiobooks protected
+  <h3>Can Last Page open my Kindle or Audible purchases?</h3>
+  <p>No. Last Page reads DRM-free files only. Books and audiobooks protected
   by DRM (most Kindle store purchases, all of Audible) cannot be opened, and
-  Afterword does not remove DRM. Kindle highlights and notes can still be
+  Last Page does not remove DRM. Kindle highlights and notes can still be
   imported from a My Clippings file or a notebook export.</p>
 
   <h3>How do I import my highlights?</h3>
-  <p>Settings &gt; Import Highlights and Lists. Afterword reads Kindle
+  <p>Settings &gt; Import Highlights and Lists. Last Page reads Kindle
   "My Clippings.txt" (from the Kindle's documents folder) and notebook HTML
   exports from the Kindle app, Apple Books annotation databases, and Goodreads
   or StoryGraph CSV exports. Highlights for books already in your library are
@@ -134,7 +139,7 @@
   stay on the device where you made them. Sync needs the same Apple Account
   on each device; you can turn it off in Settings &gt; iCloud.</p>
 
-  <h3>Does Afterword send my books anywhere?</h3>
+  <h3>Does Last Page send my books anywhere?</h3>
   <p>No. There are no accounts, ads or analytics, and the developer runs no
   servers. Data leaves your device only for services you set up yourself
   (your own book server, KOReader sync, Hardcover, Readwise) or if you choose
@@ -148,11 +153,11 @@
 
   <h3>How do I delete my data?</h3>
   <p>Deleting the app removes everything stored on the device. What is in
-  iCloud belongs to your Apple Account: turn off sync in Afterword's Settings,
-  then remove Afterword's data under iOS Settings &gt; Apple Account &gt;
+  iCloud belongs to your Apple Account: turn off sync in Last Page's Settings,
+  then remove Last Page's data under iOS Settings &gt; Apple Account &gt;
   iCloud &gt; Manage Account Storage.</p>
 
-  <p class="lede" style="margin-top:40px">Afterword is made by Abel Garcia in New Jersey, USA.</p>
+  <p class="lede" style="margin-top:40px">Last Page is made by Abel Garcia in New Jersey, USA.</p>
 </main>
 </body>
 </html>

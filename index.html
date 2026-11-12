@@ -3,27 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Afterword Privacy Policy</title>
-<meta name="description" content="How the Afterword reading app handles your books, notes and reading data.">
+<title>Last Page Privacy Policy</title>
+<meta name="description" content="How the Last Page reading app handles your books, notes and reading data.">
 <style>
   :root {
-    --paper: #F6F0E4;
-    --card: #FCF9F2;
-    --ink: #1E2A44;
-    --text: #2B2A28;
-    --muted: #5C5750;
-    --ribbon: #9C2621;
-    --rule: #E2D8C6;
+    --paper: #FFFFFF;
+    --card: #F4F4F5;
+    --ink: #0A0A0B;
+    --text: #1C1C1F;
+    --muted: #5E5E66;
+    --link: #0A0A0B;
+    --marker: #FFE600;
+    --rule: #DCDCE0;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #131B30;
-      --card: #1C2641;
-      --ink: #F1EADB;
-      --text: #E9E2D3;
-      --muted: #B9B3A6;
-      --ribbon: #F2918B;
-      --rule: #2B3655;
+      --paper: #0A0A0B;
+      --card: #18181A;
+      --ink: #F4F4F0;
+      --text: #E6E6E2;
+      --muted: #A8A8AE;
+      --link: #FFE600;
+      --rule: #2E2E32;
     }
   }
   html { background: var(--paper); }
@@ -32,23 +33,27 @@
     padding: 0 16px 64px;
     background: var(--paper);
     color: var(--text);
-    font: 17px/1.6 ui-serif, "New York", Georgia, "Times New Roman", serif;
+    font: 17px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
     -webkit-text-size-adjust: 100%;
   }
   main { max-width: 680px; margin: 0 auto; }
   header { padding: 48px 0 16px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
   .ribbon {
-    width: 16px; height: 34px; background: var(--ribbon);
+    width: 18px; height: 38px; background: #0A0A0B; position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
     margin-bottom: 16px;
   }
-  h1 { color: var(--ink); font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
-  h2 { color: var(--ink); font-size: 1.25rem; margin: 32px 0 8px; }
+  .ribbon::after {
+    content: ""; position: absolute; inset: 1.5px; background: var(--marker);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+  }
+  h1 { color: var(--ink); font-size: 2.4rem; line-height: 1.05; margin: 0 0 8px; font-weight: 800; font-stretch: 75%; letter-spacing: -0.01em; }
+  h2 { color: var(--ink); font-size: 1.35rem; margin: 32px 0 8px; font-weight: 800; font-stretch: 75%; }
   .updated { color: var(--muted); font: 15px/1.4 -apple-system, system-ui, sans-serif; margin: 0; }
   ul { padding-left: 1.2em; }
   li { margin: 6px 0; }
   strong { color: var(--ink); }
-  a { color: var(--ribbon); }
+  a { color: var(--link); text-underline-offset: 3px; }
   .note {
     background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
     padding: 12px 16px; margin: 16px 0;
@@ -59,11 +64,11 @@
 <main>
   <header>
     <div class="ribbon" aria-hidden="true"></div>
-    <h1>Afterword Privacy Policy</h1>
-    <p class="updated">Last updated: November 10, 2026</p>
+    <h1>Last Page Privacy Policy</h1>
+    <p class="updated">Last updated: November 11, 2026</p>
   </header>
 
-  <p>Afterword is an ebook, comic and audiobook reader. It comes with free
+  <p>Last Page (called Afterword before version 2.1) is an ebook, comic and audiobook reader. It comes with free
   public-domain classics and reads the books you own.
   It has no accounts of its own, no ads, no analytics and no tracking. The
   developer does not run any servers and does not receive your books, your
@@ -72,7 +77,7 @@
   <h2>What stays on your device</h2>
   <p>Your books, covers, reading positions, highlights, notes, bookmarks,
   drawings on PDFs, vocabulary, reading statistics and settings are stored on
-  your device, inside Afterword's own storage.</p>
+  your device, inside Last Page's own storage.</p>
   <p>These features run entirely on your device and send nothing anywhere:</p>
   <ul>
     <li><strong>Smart Reading</strong> with Apple's on-device model (story so
@@ -81,7 +86,7 @@
     the app and Apple's on-device model.</li>
     <li><strong>Audiobook alignment</strong>, which listens to an audiobook you
     added with Apple's on-device speech recognition to line it up with the
-    matching ebook. Afterword asks for permission first, and the audio never
+    matching ebook. Last Page asks for permission first, and the audio never
     leaves your device.</li>
     <li><strong>Bilingual reading</strong>, which translates paragraphs with
     Apple's on-device Translation. Translations are kept on your device. The
@@ -96,7 +101,7 @@
   </ul>
 
   <h2>iCloud</h2>
-  <p>If you are signed in to iCloud and leave sync on, Afterword stores your
+  <p>If you are signed in to iCloud and leave sync on, Last Page stores your
   library details, reading positions, highlights, reading sessions,
   settings, the text settings you keep for a single book, your drawings on
   PDFs and your audiobook alignments in your private iCloud database, and your
@@ -105,7 +110,7 @@
   Settings at any time.</p>
 
   <h2>Read Together</h2>
-  <p>When you start or join Read Together, Afterword uses Apple's SharePlay to
+  <p>When you start or join Read Together, Last Page uses Apple's SharePlay to
   share with the people in that FaceTime call or Messages conversation: the
   book's title, author and an identifier for the book, your place in it, the
   highlights you make while reading together, your reactions, and the name you
@@ -114,7 +119,7 @@
   provided by Apple under Apple's privacy policy.</p>
 
   <h2>Book clubs</h2>
-  <p>When you start or join a book club, Afterword uses Apple's iCloud sharing
+  <p>When you start or join a book club, Last Page uses Apple's iCloud sharing
   (CloudKit) to share with the club's members: the club's name and length, the
   book's title, author and an identifier for it, the name you give yourself
   for clubs, your progress through the book as a percentage when you check in,
@@ -125,20 +130,20 @@
 
   <h2>Free libraries</h2>
   <p>When you browse or search the free libraries in Browse (Project Gutenberg,
-  Standard Ebooks, Wikisource and textos.info), Afterword asks those sites for
+  Standard Ebooks, Wikisource and textos.info), Last Page asks those sites for
   their catalog pages, your search words and the books you download, as any
   web browser would. You don't need an account, and nothing else about you is
   sent.</p>
 
-  <h2>Afterword Plus</h2>
-  <p>Afterword Plus is bought through Apple's App Store. Apple handles the
-  payment; Afterword checks on your device, with Apple, whether you have Plus
+  <h2>Last Page Plus</h2>
+  <p>Last Page Plus is bought through Apple's App Store. Apple handles the
+  payment; Last Page checks on your device, with Apple, whether you have Plus
   and which version you first installed (people who installed before 2.0 keep
   Plus). The developer does not receive your name, payment details or
   purchase history.</p>
 
   <h2>Services you choose to connect</h2>
-  <p>Afterword sends data to another service only when you set that service
+  <p>Last Page sends data to another service only when you set that service
   up. Each one receives only what it needs:</p>
   <ul>
     <li><strong>Book servers and catalogs you add</strong> (OPDS catalogs such
@@ -161,7 +166,7 @@
     device. ElevenLabs handles the text under its own policy and bills your
     account.</li>
     <li><strong>Cloud AI</strong> (optional, off by default): Apple Private
-    Cloud Compute, or Anthropic's Claude with your own API key. Afterword asks
+    Cloud Compute, or Anthropic's Claude with your own API key. Last Page asks
     for your permission before turning either on. After that, when the
     on-device model cannot handle a request, your question and the passages of
     the book needed to answer it are sent to that provider. Apple Private Cloud
@@ -178,14 +183,14 @@
     your device.</li>
     <li><strong>Notifications</strong>: only for the daily highlight review if
     you turn it on, a note to future you on the day you chose, and a reminder
-    two days before a free trial of Afterword Plus ends if you leave that
+    two days before a free trial of Last Page Plus ends if you leave that
     reminder on.</li>
     <li><strong>Personal Voice</strong>: only if you choose to have books read
     aloud in your own Personal Voice; it stays on your device.</li>
   </ul>
 
   <h2>Children</h2>
-  <p>Afterword is not directed at children and collects no data from
+  <p>Last Page is not directed at children and collects no data from
   anyone.</p>
 
   <h2>Changes</h2>
@@ -193,7 +198,7 @@
   with a new "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about privacy or Afterword: write to
+  <p>Questions about privacy or Last Page: write to
   <a href="mailto:afterwordr@gmail.com">afterwordr@gmail.com</a>.</p>
 </main>
 </body>
